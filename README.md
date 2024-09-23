@@ -1,3 +1,6 @@
+<img src="screenshot.gif" alt="Icecream Distributed Building Cluster" width="50%" height="50%">
+
+
 # Icecream Distributed Building Cluster Setup Guide for Ubuntu
 
 This guide will help you set up an Icecream distributed building cluster on Ubuntu. Icecream allows you to distribute compilation tasks across multiple machines, significantly speeding up build times for large projects.
