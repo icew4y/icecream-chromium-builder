@@ -23,10 +23,6 @@ Before setting up the Icecream distributed building cluster, you need to build a
    ```
    sudo apt-get update
    sudo apt-get install -y libcap-dev liblzo2-dev libzstd-dev libarchive-dev
-   # WARNING: Make sure you specify a prefix, otherwise icecream
-   might override your gcc installation! You will need to use this
-   prefix instead of /usr when referring to icecream (for example
-   when extending the $PATH variable).
    ```
 
 2. Clone the Icecream repository:
@@ -47,10 +43,13 @@ Before setting up the Icecream distributed building cluster, you need to build a
    cd icecream
    ./autogen.sh
    ./configure --prefix=/opt/icecream
-   mkdir build && cd build
-   cmake ..
    make
    sudo make install
+
+   # WARNING: Make sure you specify a prefix, otherwise icecream
+   might override your gcc installation! You will need to use this
+   prefix instead of /usr when referring to icecream (for example
+   when extending the $PATH variable).
    ```
 
 
